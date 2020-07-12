@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>60 Days FullStack</title>
+  </head>
+  <body>
+    <div class="wii-menu">
+      <main class="main-style">
+        <!-- cd-gallery-items Responsive -->
+        <ul id="cd-gallery-items" class="cd-container mx-auto">
+          <li>
+            <a href="./6-24_light.dark.mode/index.html" target="_blank">
+              <img src="./thumbnail_img.png" alt="day1" />
+              <div class="overlay">6/24: Easy Mode</div>
+            </a>
+          </li>
+          <li>
+            <a href="./6-25_calculator/index.html" target="_blank">
+              <img src="./calculator.gif" alt="day1" />
+              <div class="overlay">Vanilla JS calculator</div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="./6-27_ImageSlider/FilterGallery/index.html"
+              target="_blank"
+            >
+              <img
+                src="./6-27_ImageSlider/FilterGallery/pizza.jpg"
+                alt="day1"
+              />
+              <div class="overlay">Filter DOM Elements</div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="./6-28_SlidingGallery/Image Gallery-Slider+Categories/index.html"
+              target="_blank"
+            >
+              <img
+                src="./6-28_SlidingGallery/Image Gallery-Slider+Categories/croissant.jpg"
+                alt="day1"
+              />
+              <div class="overlay">Modal and Animations</div>
+            </a>
+          </li>
+          <li>
+            <a href="./6-29_Day7/Budget App/index.html" target="_blank">
+              <img src="./budgetapp.png" alt="day1" />
+              <div class="overlay">Budget App</div>
+            </a>
+          </li>
+          <li>
+            <a href="./7-2_10Daymark/ResponsiveNav/index.html" target="_blank">
+              <img src="./hamburgernav.gif" alt="day1" />
+              <div class="overlay">Responsive Nav/Node Hello World</div>
+            </a>
+          </li>
+          <li>
+            <a href="./6-30_Day8/TrafficLight/index.html" target="_blank">
+              <img src="./ezgif.com-video-to-gif.gif" alt="day1" />
+              <div class="overlay">3D Objects JavaScript</div>
+            </a>
+          </li>
+          <li>
+            <a href="./7-3_AJAX/AJAXRandomJoke/index.html" target="_blank">
+              <img src="./Ajax.png" alt="day1" />
+              <div class="overlay">AJAX/XML Requests</div>
+            </a>
+          </li>
+          <li>
+            <a href="./7-6_BreakOutGame/index.html" target="_blank">
+              <img src="./breakout.gif" alt="day1" />
+              <div class="overlay">Arcade Games JavaScript</div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="./7-1_FITNESSAPPS/BMI calculator/index.html"
+              target="_blank"
+            >
+              <img src="./thumbnail.jpg" alt="day1" />
+              <div class="overlay">MATH methods</div>
+            </a>
+          </li>
+        </ul>
+        <!-- cd-gallery-items -->
+      </main>
+    </div>
+    <nav>
+      <div class="navbar">
+        <a
+          class="navleft d-flex justify-content-center text-center align-items-center"
+          style="text-decoration: none;"
+          href="https://github.com/uzomezu/project-a-Day"
+        >
+          <i class="fa fa-github"></i>
+        </a>
+        <div
+          class="datebox badge-pill mt-3 d-flex flex-column justify-content-center align-items-center"
+        >
+          <span>#60DaystoFullStack</span>
+          <span>Date</span>
+        </div>
+        <a
+          class="navright d-flex justify-content-center text-center align-items-center"
+          href="mailto:kmezu1@student.umgc.edu"
+          ><i class="fa fa-envelope"></i
+        ></a>
+      </div>
+    </nav>
+    <footer class="position-fixed text-center">
+      Follow my progress:
+      <a href="https://twitter.com/ios_kevin"
+        ><i class="fa fa-twitter" aria-hidden="true"></i>@ios_kevin</a
+      >
+    </footer>
+    <script>
+      let miiMusic = new Audio(
+        "https://vgmdownloads.com/soundtracks/wii-music-collection/tasdctcp/04.%20Mii%20Plaza.mp3"
+      );
+      miiMusic.play();
+      miiMusic.addEventListener(
+        "ended",
+        function () {
+          this.currentTime = 0;
+          this.play();
+        },
+        false
+      );
+    </script>
+  </body>
+</html>

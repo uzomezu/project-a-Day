@@ -1,0 +1,205 @@
+@font-face {
+  font-family: WiiFont;
+  src: url(./contb.ttf);
+}
+body {
+  font-family: WiiFont;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+.cd-container {
+  margin: 0;
+  padding: 10px;
+  width: 90%;
+  border: inset 3px 0px 3px 0px brown;
+}
+.main-style {
+  max-width: 100%;
+  padding: 10px;
+  margin: 25px;
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  height: 100%;
+  bottom: 0;
+  background: url(./tvstatic.gif);
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0.33;
+  color: white;
+  font-size: 35px;
+  padding: 20px;
+  text-align: center;
+  z-index: 5;
+}
+#cd-gallery-items li {
+  position: relative;
+  margin-bottom: 1.5em;
+  border-radius: 1rem;
+  border: solid 1px skyblue;
+  box-shadow: 6px 6px 5px 0px grey;
+  list-style-type: none;
+  text-align: left;
+  &:hover .overlay {
+    opacity: 0.05;
+  }
+  span {
+    font-size: 20px;
+  }
+}
+#cd-gallery-items li img {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.25s all;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #cd-gallery-items li {
+    width: 48%;
+    float: left;
+    margin-bottom: 2em;
+    margin-right: 4%;
+  }
+  #cd-gallery-items li:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #cd-gallery-items li {
+    width: 31%;
+    float: left;
+    margin-bottom: 2.5em;
+    margin-right: 3.5%;
+  }
+  #cd-gallery-items li:nth-child(2n) {
+    margin-right: 3.5%;
+  }
+  #cd-gallery-items li:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+.cd-container::after {
+  /* clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(skyblue, grey);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(skyblue, aqua);
+}
+.wii-menu {
+  scroll-behavior: smooth;
+  z-index: 2;
+  height: 70vh;
+  overflow-y: scroll;
+  background: whitesmoke;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom: solid 4px aqua;
+}
+.datebox {
+  width: 20vw;
+  height: 45px;
+}
+nav {
+  height: 30vh;
+  z-index: 1;
+  background: darken(whitesmoke, 5%);
+  width: 100%;
+  box-shadow: inset 0px 4px 6px 0px grey;
+}
+.navright,
+.navleft {
+  width: 40px;
+  height: 40px;
+  color: #5c5b5b;
+  font-size: 20px;
+  background: radial-gradient(
+    circle at 65% 15%,
+    white 1px,
+    whitesmoke 3%,
+    grey 60%,
+    whitesmoke 100%
+  );
+  border: solid 4px skyblue;
+  margin: 14px;
+  border-radius: 50%;
+  &:hover {
+    color: skyblue;
+    cursor: pointer;
+    border: solid 4px aqua;
+    background: radial-gradient(
+      circle at 65% 15%,
+      white 1px,
+      #ccc 3%,
+      grey 60%,
+      #ccc 100%
+    );
+  }
+}
+@media screen and (min-width: 768px) {
+  .navright,
+  .navleft {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .navright,
+  .navleft {
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+  }
+}
+.navbar {
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+@media screen and (min-height: 400px) {
+  .wii-menu {
+    height: 85vh;
+  }
+  nav {
+    height: 15vh;
+  }
+}
