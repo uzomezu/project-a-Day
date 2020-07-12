@@ -1,5 +1,6 @@
 "# project-a-Day" 
 
+Link: https://uzomezu.github.io/project-a-Day/
 
 Join me in my development journey to develop a PWA(Progressive Web App) in 60 days using my basic knowledge of JavaScript and some cool libraries I want to learn. 
 
