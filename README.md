@@ -1,7 +1,7 @@
 "# project-a-Day" 
 
 
-This is post one in my development challenge to hopefully develop a PWA(Progressive Web App) in 60 days using my JS technology and some cool libraries I want to learn.
+Join me in my development jounrey to develop a PWA(Progressive Web App) in 60 days using my basic knowledge of JavaScript and some cool libraries I want to learn. 
 
 Rules : 
 1. Technologies I can use:
