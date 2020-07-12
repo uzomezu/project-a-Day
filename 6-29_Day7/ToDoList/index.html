@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <h1 class="m-3">To-Do List App</h1>
+    <form id="myForm" style="max-width: 90%;" class="mx-auto">
+      <div class="form-group">
+        <label for="vocab-input">Task</label>
+        <input
+          type="text"
+          class="form-control"
+          id="to-do"
+          aria-describedby="vocab"
+          placeholder="Rake the leaves"
+        />
+        <small id="emailHelp" class="form-text text-muted font-italic"
+          >Example: Do the dishes, take out trash, feed the dog, mow the lawn
+          etc.</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="comments">Comments</label>
+        <textarea id="comments" class="form-control" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <ul id="to-do-list" class="mx-auto">
+      <li>
+        <div>Vanilla JS Project</div>
+        <p></p>
+        <button class="btn btn-danger">X</button>
+      </li>
+    </ul>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+.bordererd {
+  border: solid 2px black;
+}
+
+ul {
+  width: 991px;
+  /* Keyword value */
+  list-style-type: none;
+  margin: 6px;
+  > li {
+    float: left;
+    width: 24.99%;
+    padding: 6px;
+    margin: 6px;
+    height: 145px;
+    border: solid 2px black;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 700px) {
+  ul {
+    li {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  ul {
+    li {
+      width: 100%;
+    }
+  }
+}

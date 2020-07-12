@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Food Reviews: Chef's Specials</title>
+  </head>
+  <body class="bg-success">
+    <div class="navbar bg-dark">
+      <div class="card-body">
+        <a class="btn btn-secondary" href="../FilterGallery/index.html"
+          >Filter Gallery</a
+        >
+        <a class="btn btn-secondary" href="../ImageSlider/index.html"
+          >Image Slider</a
+        >
+        <a class="btn btn-secondary" href="../OpacityAnimation/index.html"
+          >Opacity Animation</a
+        >
+        <a class="btn btn-primary" href="../TestimonialSlider/index.html"
+          >Testimonial Slider</a
+        >
+      </div>
+    </div>
+    <h1 class="text-white text-center">Testimonials</h1>
+    <div class="card mx-auto" style="width: 18rem;">
+      <img id="image" src="burger.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 id="dish" class="card-title">Card title</h5>
+        <p id="review" class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li id="chef" class="list-group-item">Chef Pierre Levrette</li>
+        <li id="restaurant" class="list-group-item">The Succulent Palace</li>
+        <li id="stars" class="list-group-item font-weight-bold">
+          4 out of 5 stars
+        </li>
+      </ul>
+      <div class="card-body d-flex justify-content-between">
+        <button class="btn btn-primary prev">Prev.</button>
+        <button class="btn btn-primary next">Next</button>
+      </div>
+    </div>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

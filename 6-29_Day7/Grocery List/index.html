@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Grocery List</title>
+  </head>
+  <body>
+    <h1 class="m-3">Grocery List App</h1>
+    <form id="myForm" style="max-width: 90%;" class="mx-auto">
+      <div class="form-group">
+        <label for="vocab-input">Grocery Item</label>
+        <input
+          type="text"
+          class="form-control"
+          id="grocery"
+          aria-describedby="vocab"
+          placeholder="Apple"
+        />
+        <small id="emailHelp" class="form-text text-muted font-italic"
+          >Example: Short Rib, Green Onion, Apple, Banana, etc.</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="amount">How Many</label>
+        <select class="form-control">
+          <option value="1.0">1</option>
+          <option value="2.0">2</option>
+          <option value="3.0">3</option>
+          <option value="4.0">4</option>
+          <option value="5.0">5</option>
+        </select>
+        <small id="amount" class="form-text text-muted font-italic"
+          >Number of This Grocery Item</small
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <ul id="grocery-items" class="mx-auto">
+      <li class="card">
+        <div class="card-title"></div>
+        <button class="btn btn-danger">X</button>
+      </li>
+    </ul>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

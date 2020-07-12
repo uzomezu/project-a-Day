@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>HomePage - Color Generator</title>
+  </head>
+  <body id="root">
+    <div class="card mx-auto" style="width: 17rem; margin-top: 10rem;">
+      <div class="card-body">
+        <h3 class="card-title">
+          This is the random Color Generator
+        </h3>
+        <p class="card-text">
+          press the button below to generate a random color in RGB format.
+        </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center">
+          <button class="btn btn-primary" onclick="generateColor()" class="">
+            Change Color
+          </button>
+        </li>
+        <li class="list-group-item text-center">
+          <span class="h5" id="curColor">rgb(245,245,220)</span>
+        </li>
+      </ul>
+      <div class="card-body text-center">
+        <h6 class="card-title">Other Projects:</h6>
+        <div class="d-flex flex-wrap justify-content-around">
+          <a href="colorhex.html" class="badge badge-secondary"
+            >Color Hex Random</a
+          >
+          <a href="calculator.html" class="badge badge-secondary">Calculator</a>
+          <a href="./RoundOutTabs/filetabs.html" class="badge badge-secondary"
+            >File Tabs</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

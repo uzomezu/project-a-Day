@@ -1,0 +1,30 @@
+.form-group {
+  font-family: cursive;
+}
+.form-group input,
+.form-group select {
+  font-family: monospace;
+}
+#grocery-items {
+  list-style-type: none;
+  margin: 5px;
+  padding: 15px;
+  max-width: 768px;
+  background-color: beige;
+}
+#grocery-items li {
+  margin: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: wheat;
+  font-size: 35px;
+  color: slategray;
+  box-shadow: 1px 1px 1px 1px #e3a32c;
+}
+#grocery-items li button,
+#grocery-items li span {
+  margin: 10px;
+}

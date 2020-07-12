@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Image Slider</title>
+  </head>
+  <body>
+    <div class="navbar bg-dark">
+      <div class="card-body">
+        <a class="btn btn-secondary" href="../FilterGallery/index.html"
+          >Filter Gallery</a
+        >
+        <a class="btn btn-primary" href="../ImageSlider/index.html"
+          >Image Slider</a
+        >
+        <a class="btn btn-secondary" href="../OpacityAnimation/index.html"
+          >Opacity Animation</a
+        >
+        <a class="btn btn-secondary" href="../TestimonialSlider/index.html"
+          >Testimonial Slider</a
+        >
+      </div>
+    </div>
+    <div id="wrapper">
+      <div class="row">
+        <div class="col-12">
+          <h1>Sexy Foods Image Slider</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-row justify-content-between">
+            <button class="btn btn-warning" id="left-btn">Prev</button>
+            <button class="btn btn-warning" id="right-btn">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div id="mainImage">
+            <img id="largeImage" src="burger.jpg" alt="larg image" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

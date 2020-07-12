@@ -1,0 +1,42 @@
+.opacity {
+  animation-name: dissolve;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+@keyframes dissolve {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+.body {
+  width: 991px;
+  height: 100vh;
+  background-color: grey;
+}
+.window {
+  width: 568px;
+  height: 568px;
+  background-color: green;
+  margin-top: 100px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 100;
+}

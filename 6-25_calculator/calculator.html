@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="card calc mx-auto" style="width: 17rem; margin-top: 10rem;">
+      <div class="card-body" style="height: 4rem;">
+        <h3 class="card-title">Calculator</h3>
+      </div>
+      <div class="card-body calculator-window">
+        <span id="answer"></span>
+        <span id="calculator-window"></span>
+      </div>
+      <table>
+        <thead>
+          <tr id="operations">
+            <td>
+              <button
+                onclick="calculator(this);"
+                id="*"
+                class="btn btn-secondary"
+              >
+                *
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="calculator(this);"
+                id="/"
+                class="btn btn-secondary"
+              >
+                /
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="calculator(this);"
+                id="-"
+                class="btn btn-warning"
+              >
+                -
+              </button>
+            </td>
+            <td>
+              <button
+                onclick="calculator(this);"
+                id="+"
+                class="btn btn-warning"
+              >
+                +
+              </button>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="operations">
+            <td><button onclick="calculator(this);" id=".">.</button></td>
+            <td><button onclick="calculator(this);" id="9">9</button></td>
+            <td><button onclick="calculator(this);" id="8">8</button></td>
+            <td><button onclick="calculator(this);" id="7">7</button></td>
+          </tr>
+          <tr id="operations">
+            <td><button onclick="calculator(this);" id="6">6</button></td>
+            <td><button onclick="calculator(this);" id="5">5</button></td>
+            <td><button onclick="calculator(this);" id="4">4</button></td>
+            <td><button onclick="calculator(this);" id="3">3</button></td>
+          </tr>
+          <tr id="operations">
+            <td><button onclick="calculator(this);" id="2">2</button></td>
+            <td><button onclick="calculator(this);" id="1">1</button></td>
+            <td><button onclick="calculator(this);" id="0">0</button></td>
+            <td>
+              <button
+                onclick="calculator(this);"
+                id="="
+                class="btn btn-success"
+              >
+                =
+              </button>
+            </td>
+          </tr>
+          <tr id="operations">
+            <td>
+              <button
+                onclick="calculator(this);"
+                id="clear"
+                class="btn btn-danger"
+              >
+                Clear
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="card-body text-center">
+        <h6 class="card-title">Other Projects:</h6>
+        <div class="d-flex flex-wrap justify-content-around">
+          <a href="index.html" class="badge badge-secondary"
+            >Color RGB Random</a
+          >
+          <a href="colorhex.html" class="badge badge-secondary"
+            >Color Hex random</a
+          >
+          <a href="./RoundOutTabs/filetabs.html" class="badge badge-secondary"
+            >File Tabs</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

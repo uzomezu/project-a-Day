@@ -1,0 +1,330 @@
+$corner-tab-size: 30px;
+$triangle-color1: #f1f1f1;
+$triangle-color2: #e1e1e1;
+
+$accent-colour-1: #f0d001;
+$accent-colour-2: #95c93d;
+$accent-colour-3: #c768ff;
+$accent-colour-4: #f48a4e;
+body {
+  background-color: beige;
+}
+#folder {
+  position: absolute;
+  z-index: 100;
+  width: 500px;
+  height: 500px;
+  background: grey;
+  top: 100px;
+  margin: 5px;
+  border-radius: 100px;
+}
+.calc {
+  border: solid 2px black;
+  background-color: slategrey;
+}
+.btn-secondary {
+  border: solid 1px white;
+}
+.calculator-window {
+  background: rgb(29, 26, 26);
+  color: blanchedalmond;
+  font-size: 1.3rem;
+  width: 100%;
+  height: 4rem;
+  padding: 1px;
+}
+#operations {
+  width: 100%;
+  td {
+    width: calc(0.25 * 17rem);
+    > button {
+      width: 100%;
+      font-size: larger;
+    }
+  }
+}
+
+@mixin border-radius-top($border-radius-size) {
+  -webkit-border-top-left-radius: $border-radius-size;
+  -webkit-border-top-right-radius: $border-radius-size;
+  -moz-border-radius-topleft: $border-radius-size;
+  -moz-border-radius-topright: $border-radius-size;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
+}
+
+nav {
+  display: block;
+  margin-left: $corner-tab-size;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    > li {
+      z-index: 2;
+      @include border-radius-top($corner-tab-size);
+      background-color: $triangle-color1;
+      border-top-width: 0.5em;
+      border-top-style: solid;
+      box-sizing: content-box;
+      min-height: 4em;
+      position: relative;
+      display: block;
+      float: left;
+
+      a {
+        padding: 2em;
+        color: #a6a6a6;
+        text-decoration: none;
+        color: #232a34;
+        display: block;
+      }
+
+      .curved-tabs,
+      .curved-tabs:before,
+      .curved-tabs:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        bottom: 0;
+        border-style: solid;
+      }
+
+      .curved-tabs-l,
+      .curved-tabs-l:before,
+      .curved-tabs-l:after {
+        border-color: transparent transparent $triangle-color1 transparent;
+      }
+
+      .curved-tabs-r,
+      .curved-tabs-r:before,
+      .curved-tabs-r:after {
+        border-color: transparent transparent transparent $triangle-color1;
+      }
+
+      .curved-tabs-1 {
+        border-width: 0 0 round($corner-tab-size * 0.9)
+          round($corner-tab-size * 0.18);
+        left: -1 * round($corner-tab-size * 0.18) + 0.5px;
+      }
+
+      .curved-tabs-1:before {
+        border-width: 0 0 round($corner-tab-size * 0.18)
+          round($corner-tab-size * 0.9);
+        right: 0;
+        bottom: -1 * round($corner-tab-size * 0.9);
+      }
+
+      .curved-tabs-1:after {
+        border-width: 0 0 round($corner-tab-size * 0.4)
+          round($corner-tab-size * 0.74);
+        right: 0;
+        bottom: -1 * round($corner-tab-size * 0.9);
+      }
+
+      .curved-tabs-2 {
+        border-width: 0 0 round($corner-tab-size * 0.74)
+          round($corner-tab-size * 0.4);
+        left: -1 * round($corner-tab-size * 0.4) + 0.5px;
+      }
+
+      .curved-tabs-2:before {
+        border-width: 0 0 round($corner-tab-size * 0.8)
+          round($corner-tab-size * 0.32);
+        right: 0;
+        bottom: -1 * round($corner-tab-size * 0.74);
+      }
+
+      .curved-tabs-2:after {
+        border-width: 0 0 round($corner-tab-size * 0.32)
+          round($corner-tab-size * 0.8);
+        right: 0;
+        bottom: -1 * round($corner-tab-size * 0.74);
+      }
+
+      .curved-tabs-3 {
+        border-width: 0 0 round($corner-tab-size * 0.67)
+          round($corner-tab-size * 0.5);
+        left: -1 * round($corner-tab-size * 0.5) + 0.5px;
+      }
+
+      .curved-tabs-3:before {
+        border-width: 0 0 round($corner-tab-size * 0.5)
+          round($corner-tab-size * 0.67);
+        right: 0;
+        bottom: -1 * round($corner-tab-size * 0.67);
+      }
+
+      .curved-tabs-3:after {
+        border-width: 0 0 round($corner-tab-size * 0.58)
+          round($corner-tab-size * 0.58);
+        right: 0;
+        bottom: -1 * round($corner-tab-size * 0.67);
+      }
+
+      .curved-tabs-4 {
+        border-width: round($corner-tab-size * 0.9) 0 0
+          round($corner-tab-size * 0.18);
+        right: -1 * round($corner-tab-size * 0.18) + 0.5px;
+      }
+
+      .curved-tabs-4:before {
+        border-width: round($corner-tab-size * 0.18) 0 0
+          round($corner-tab-size * 0.9);
+        left: -1 * round($corner-tab-size * 0.18);
+      }
+
+      .curved-tabs-4:after {
+        border-width: round($corner-tab-size * 0.4) 0 0
+          round($corner-tab-size * 0.74);
+        left: -1 * round($corner-tab-size * 0.18);
+      }
+
+      .curved-tabs-5 {
+        border-width: round($corner-tab-size * 0.74) 0 0
+          round($corner-tab-size * 0.4);
+        right: -1 * round($corner-tab-size * 0.4) + 0.5px;
+      }
+
+      .curved-tabs-5:before {
+        border-width: round($corner-tab-size * 0.8) 0 0
+          round($corner-tab-size * 0.32);
+        left: -1 * round($corner-tab-size * 0.4);
+      }
+
+      .curved-tabs-5:after {
+        border-width: round($corner-tab-size * 0.32) 0 0
+          round($corner-tab-size * 0.8);
+        left: -1 * round($corner-tab-size * 0.4);
+      }
+
+      .curved-tabs-6 {
+        border-width: round($corner-tab-size * 0.67) 0 0
+          round($corner-tab-size * 0.5);
+        right: -1 * round($corner-tab-size * 0.5) + 0.5px;
+      }
+
+      .curved-tabs-6:before {
+        border-width: round($corner-tab-size * 0.5) 0 0
+          round($corner-tab-size * 0.67);
+        left: -1 * round($corner-tab-size * 0.5);
+      }
+
+      .curved-tabs-6:after {
+        border-width: round($corner-tab-size * 0.58) 0 0
+          round($corner-tab-size * 0.58);
+        left: -1 * round($corner-tab-size * 0.5);
+      }
+    }
+
+    //alternating light grey
+    > li:nth-child(2n) {
+      background-color: $triangle-color2;
+      z-index: 1;
+
+      .curved-tabs-l,
+      .curved-tabs-l:before,
+      .curved-tabs-l:after {
+        border-color: transparent transparent $triangle-color2 transparent;
+      }
+
+      .curved-tabs-r,
+      .curved-tabs-r:before,
+      .curved-tabs-r:after {
+        border-color: transparent transparent transparent $triangle-color2;
+      }
+    }
+
+    > li:hover,
+    > li:focus {
+      z-index: 3;
+    }
+
+    > li:nth-child(4n) {
+      border-top-color: $accent-colour-1;
+
+      &:hover,
+      &:focus {
+        background: $accent-colour-1;
+
+        .curved-tabs-l,
+        .curved-tabs-l:before,
+        .curved-tabs-l:after {
+          border-color: transparent transparent $accent-colour-1 transparent;
+        }
+
+        .curved-tabs-r,
+        .curved-tabs-r:before,
+        .curved-tabs-r:after {
+          border-color: transparent transparent transparent $accent-colour-1;
+        }
+      }
+    }
+
+    > li:nth-child(4n + 1) {
+      border-top-color: $accent-colour-2;
+
+      &:hover,
+      &:focus {
+        background: $accent-colour-2;
+
+        .curved-tabs-l,
+        .curved-tabs-l:before,
+        .curved-tabs-l:after {
+          border-color: transparent transparent $accent-colour-2 transparent;
+        }
+
+        .curved-tabs-r,
+        .curved-tabs-r:before,
+        .curved-tabs-r:after {
+          border-color: transparent transparent transparent $accent-colour-2;
+        }
+      }
+    }
+
+    > li:nth-child(4n + 2) {
+      border-top-color: $accent-colour-3;
+      &:hover,
+      &:focus {
+        background: $accent-colour-3;
+
+        .curved-tabs-l,
+        .curved-tabs-l:before,
+        .curved-tabs-l:after {
+          border-color: transparent transparent $accent-colour-3 transparent;
+        }
+
+        .curved-tabs-r,
+        .curved-tabs-r:before,
+        .curved-tabs-r:after {
+          border-color: transparent transparent transparent $accent-colour-3;
+        }
+      }
+    }
+
+    > li:nth-child(4n + 3) {
+      border-top-color: $accent-colour-4;
+
+      &:hover,
+      &:focus {
+        background: $accent-colour-4;
+
+        .curved-tabs-l,
+        .curved-tabs-l:before,
+        .curved-tabs-l:after {
+          border-color: transparent transparent $accent-colour-4 transparent;
+        }
+
+        .curved-tabs-r,
+        .curved-tabs-r:before,
+        .curved-tabs-r:after {
+          border-color: transparent transparent transparent $accent-colour-4;
+        }
+      }
+    }
+  }
+}

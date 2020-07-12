@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Filter Gallery</title>
+  </head>
+  <body class="">
+    <div class="navbar bg-dark">
+      <div class="card-body">
+        <a class="btn btn-primary" href="../FilterGallery/index.html"
+          >Filter Gallery</a
+        >
+        <a class="btn btn-secondary" href="../ImageSlider/index.html"
+          >Image Slider</a
+        >
+        <a class="btn btn-secondary" href="../OpacityAnimation/index.html"
+          >Opacity Animation</a
+        >
+        <a class="btn btn-secondary" href="../TestimonialSlider/index.html"
+          >Testimonial Slider</a
+        >
+      </div>
+    </div>
+    <h1 class="text-center">Filter Gallery: Cafe Menu</h1>
+    <div
+      class="d-flex flex-row justify-content-around mx-auto m-3"
+      style="max-width: 768px;"
+    >
+      <button class="all btn btn-primary">All</button>
+      <button class="breakfast btn btn-success">Breakfast</button>
+      <button class="lunch btn btn-warning">Lunch</button>
+      <button class="dinner btn btn-danger">Dinner</button>
+    </div>
+    <div class="row">
+      <ul id="gallery" class="d-flex flex-wrap mx-auto">
+        <li></li>
+      </ul>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

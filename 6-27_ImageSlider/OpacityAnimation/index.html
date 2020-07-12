@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Opacity Animation</title>
+  </head>
+  <body>
+    <div class="navbar bg-dark">
+      <div class="card-body">
+        <a class="btn btn-secondary" href="../FilterGallery/index.html"
+          >Filter Gallery</a
+        >
+        <a class="btn btn-secondary" href="../ImageSlider/index.html"
+          >Image Slider</a
+        >
+        <a class="btn btn-primary" href="../OpacityAnimation/index.html"
+          >Opacity Animation</a
+        >
+        <a class="btn btn-secondary" href="../TestimonialSlider/index.html"
+          >Testimonial Slider</a
+        >
+      </div>
+    </div>
+    <main id="gallery" class="body mx-auto">
+      <button class="toggle show-pic btn btn-success">Show Window</button>
+    </main>
+
+    <div id="pic" class="window">
+      <button class="toggle show-gallery btn btn-secondary">
+        Show Body
+      </button>
+    </div>
+  </body>
+  <script>
+    (() => {
+      const toggle = document.querySelectorAll(".toggle");
+      const pic = document.getElementById("pic");
+      const gallery = document.getElementById("gallery");
+      function addOpacity(idShow, idHide) {
+        idShow.classList.add("opacity");
+        idShow.style.display = "block";
+        idHide.classList.remove("opacity");
+        idHide.style.display = "none";
+      }
+      window.onload = addOpacity(gallery, pic);
+      toggle.forEach(function (button) {
+        button.addEventListener("click", () => {
+          if (button.classList.contains("show-pic")) {
+            addOpacity(pic, gallery);
+          }
+          if (button.classList.contains("show-gallery")) {
+            addOpacity(gallery, pic);
+          }
+        });
+      });
+    })();
+  </script>
+</html>

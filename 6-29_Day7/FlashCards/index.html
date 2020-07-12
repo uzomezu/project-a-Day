@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>FlashCards: JavaScript</title>
+  </head>
+  <body>
+    <h1 class="m-3">FlashCards Maker</h1>
+    <form id="myForm" style="max-width: 90%;" class="mx-auto">
+      <div class="form-group">
+        <label for="vocab-input">Vocab Word</label>
+        <input
+          type="text"
+          class="form-control"
+          id="vocab-input"
+          aria-describedby="vocab"
+          placeholder="JavaScript"
+        />
+        <small id="emailHelp" class="form-text text-muted font-italic"
+          >Example: Constructor function, OOP, View library</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="definition">Definition</label>
+        <input
+          type="text"
+          class="form-control"
+          id="definition"
+          placeholder="JavaScript is a programming language"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <ul class="flashcards mx-auto m-3"></ul>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
