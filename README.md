@@ -5,12 +5,12 @@ Join me in my development journey to develop a PWA(Progressive Web App) in 60 da
 
 Rules : 
 1. Technologies I can use:
-a. HTML
-b. Bootstrap
-c. JavaScript(EcmaScript 6 notation)
-d. Node.js
-e. Vue.js
-f. THREE.js
+- HTML
+- Bootstrap
+- JavaScript(EcmaScript 6 notation)
+- Node.js
+- Vue.js
+- THREE.js
 
 2. Point System 
 - (bronze) = 1 point(s) HTML,CSS
