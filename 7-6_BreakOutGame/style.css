@@ -1,0 +1,13 @@
+canvas {
+  background: #eee;
+  border: ridge 3px #dbd812;
+  box-shadow: 1px 1px 1px 1px rgba(219, 216, 18, 0.5);
+}
+body {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 400px;
+  align-items: center;
+  background: linear-gradient(aqua, #db127a);
+}
