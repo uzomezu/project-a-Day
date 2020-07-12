@@ -132,16 +132,18 @@
       >
     </footer>
     <script>
-      let miiMusic = new Audio("./miiPlaza.ogg");
-      miiMusic.play();
-      miiMusic.addEventListener(
-        "ended",
-        function () {
-          this.currentTime = 0;
-          this.play();
-        },
-        false
-      );
+      (function () {
+        let miiMusic = new Audio("./miiPlaza.ogg");
+        miiMusic.play();
+        miiMusic.addEventListener(
+          "ended",
+          function () {
+            this.currentTime = 0;
+            this.play();
+          },
+          false
+        );
+      })();
     </script>
   </body>
 </html>
