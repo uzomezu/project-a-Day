@@ -46,7 +46,7 @@
 
     let loader = new THREE.GLTFLoader();
     loader.load(
-      "https://uzomezu.github.io/L-etudient-qui-se-Promene/trafficlight/scene.gltf",
+      "https://uzomezu.github.io/L-etudient-qui-se-Promene/traffic light/scene.gltf",
       function (gltf) {
         scene.add(gltf.scene);
         object = gltf.scene.children[0];
