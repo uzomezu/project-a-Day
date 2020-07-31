@@ -1,12 +1,22 @@
-* {
+*,
+::after,
+::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
-  overflow: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
 }
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -36,8 +46,11 @@ nav h4 {
   font-size: 14px;
   letter-spacing: 5px;
 }
+.btn {
+  transition: all 0.2s ease-in-out;
+}
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   display: none;
   align-items: center;
   justify-content: center;
@@ -59,7 +72,7 @@ nav h4 {
   text-decoration: none;
   color: blanchedalmond;
   font-size: 18px;
-  margin: 30px;
+  margin: 15px;
   letter-spacing: 5px;
 }
 .mobile-menu div a:hover {
@@ -76,8 +89,10 @@ nav h4 {
 @keyframes appear {
   0% {
     opacity: 0;
+    width: 0;
   }
   100% {
+    width: 100%;
     opacity: 1;
   }
 }
@@ -148,5 +163,106 @@ nav h4 {
   }
   .menu-btn {
     display: flex;
+  }
+}
+.shopping-cart {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 4px black;
+  background-color: white;
+}
+.shopping-cart .cart-items {
+  font-size: 20px;
+}
+.shopping-cart .cart-items a {
+  text-decoration: none;
+  color: black;
+}
+.shopping-cart .cart-items a:hover {
+  color: red;
+}
+.cd-container {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  border: inset 3px 0px 3px 0px brown;
+}
+.main-style {
+  padding-top: 100px;
+  max-width: 881px;
+  padding-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#cd-gallery-items li {
+  width: 48%;
+  padding: 3vw;
+  position: relative;
+  float: left;
+  margin-bottom: 2em;
+  margin-right: 4%;
+  display: block;
+  list-style-type: none;
+  text-align: left;
+}
+#cd-gallery-items li:nth-child(2n) {
+  margin-right: 0;
+}
+#cd-gallery-items li img {
+  width: 100%;
+  display: block;
+  border-radius: 0.25em;
+}
+#cd-gallery-items li img:hover {
+  opacity: 0.8;
+  transition: 0.25s all;
+}
+.cd-container::after {
+  /* clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+.toggle:hover {
+  cursor: pointer;
+}
+#product-card {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-family: "Poppins", sans-serif;
+  display: none;
+}
+.opacity {
+  animation-name: dissolve;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+@keyframes dissolve {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+  100% {
+    display: block;
+    opacity: 1;
   }
 }

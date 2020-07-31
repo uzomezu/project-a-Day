@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Kevin",
+    "job": "Front End Developer",
+    "Skills": ["JavaScript", "HTML", "CSS", "XML", "AJAX"],
+    "experience": [
+      {
+        "company": "ACRO* Minutiae",
+        "role": "Agent 00/Founder"
+      },
+      { "company": "Awesome AF Venue", "role": "Visual Effects Guy/Stage Crew" }
+    ]
+  }
+]

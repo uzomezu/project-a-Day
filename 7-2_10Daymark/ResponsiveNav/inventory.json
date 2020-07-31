@@ -1,0 +1,58 @@
+[
+  {
+    "item": "cappuccino",
+    "img": "cappuccino.jpg",
+    "desc": "A delightful vanilla cappuccino with a dash of cinnamon on the top, ask your barista for foam art!",
+    "flavors": ["vanilla", "caramel"],
+    "toppings": ["whipcream", "sugar", "creamer"]
+  },
+  {
+    "item": "coffee",
+    "img": "coffee.jpg",
+    "desc": "a smooth caffeinated drink, using imported colombian beans. Pick your choice of caffeinated or decaf, with plenty of toppings!",
+    "flavors": ["decaf", "caffeinated"],
+    "toppings": ["whipcream", "sugar", "creamer"]
+  },
+  {
+    "item": "frappuccino",
+    "img": "frappuccino.jpg",
+    "desc": "A frappuccino made with our barrista's secret recipe from Italy! Flavors include chocolate, vanilla, and caramel. Watch out for matcha flavor coming next year!",
+    "flavors": ["vanilla", "chocolate", "caramel"],
+    "toppings": ["creamer", "sugar", "whipcream", "extra syrup"]
+  },
+  {
+    "item": "café glacé",
+    "img": "glace.jpg",
+    "desc": "Vanilla icecream with coffee, a perfect treat for the summer, be sure to ask for a spoon, it can get messy!",
+    "flavors": ["vanilla"],
+    "toppings": ["whipcream", "caramel syrup"]
+  },
+  {
+    "item": "hot cocoa",
+    "img": "hotcocoa.jpg",
+    "desc": "Our in house recipe, hot cocoa in either white chocolate or dark chocolate.",
+    "flavors": ["white", "dark"],
+    "toppings": ["whipcream", "cinnamon", "extra syrup"]
+  },
+  {
+    "item": "cup of tea",
+    "img": "liptontea.jpg",
+    "desc": "A soothing cup of tea, served ice or hot, with plenty of flavors. Ask for our specialties of plain tea or matcha green tea!",
+    "flavors": ["plain", "matcha"],
+    "toppings": ["lemon", "sugar", "honey", "creamer"]
+  },
+  {
+    "item": "green tea",
+    "img": "matcha.jpg",
+    "desc": "A soothing cup of tea, served ice or hot, with plenty of flavors. Ask for our specialties of plain tea or matcha green tea!",
+    "flavors": ["plain", "matcha"],
+    "toppings": ["lemon", "honey", "sugar", "creamer"]
+  },
+  {
+    "item": "Mocha",
+    "img": "mocha.jpg",
+    "desc": "House mocha with a shot of expresso or without. A splendid chocolate flavor that comes with your preferred drizzle of caramel or chocolate. Watch out for white mocha coming next Fall!",
+    "flavors": ["chocolate"],
+    "toppings": ["whipcream", "caramel syrup", "extra syrup"]
+  }
+]
